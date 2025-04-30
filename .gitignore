@@ -1,0 +1,5 @@
+.vs/
+SqliteDB.db-*
+obj/
+bin/
+SqliteDB.db
