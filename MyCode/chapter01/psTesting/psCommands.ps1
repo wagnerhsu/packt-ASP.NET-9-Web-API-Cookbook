@@ -1,8 +1,8 @@
 $baseUrl = "http://localhost:5148"
 $testEndpoint = "/Products?pageSize=10"
-$fullUrl = $baseUrl + $testEndpoint;
+$fullUrl = $baseUrl + $testEndpoint
 
-$response = Invoke-WebRequest -Uri $fullUrl -Headers @{"Accept" = "application/json"}
+$response = Invoke-WebRequest -Uri $fullUrl -Headers @{"Accept" = "application/json" }
 
 $xPaginationHeader = $response.Headers["X-Pagination"]
 $xPagination = $xPaginationHeader | ConvertFrom-Json 
